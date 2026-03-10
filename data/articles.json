@@ -1,11 +1,10 @@
 [
   {
     "id": 1,
-    "title": "Introducción a Node.js",
+    "title": "Metodo Patch ACTUALIZADO",
     "content": "Node.js es un entorno de ejecución de JavaScript del lado del servidor construido sobre el motor V8 de Chrome.",
-    "author": "Ana García",
-    "published": true,
-    "createdAt": "2024-01-15T10:00:00Z"
+    "author": "Antonio Lopez",
+    "published": false
   },
   {
     "id": 2,
