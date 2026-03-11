@@ -30,11 +30,25 @@ function getOne(req, res, next) {
  * Asigna id autoincremental y published: false por defecto
  */
 function create(req, res) {
+  const { title, content, author } = req.body;
+
+  if (!title) {
+    return res.status(422).json({ field: "title" });
+  }
+
+  if (!content || content.length < 10) {
+    return res.status(422).json({ field: "content" });
+  }
+
+  if (!author) {
+    return res.status(422).json({ field: "author" });
+  }
+
   const newArticle = {
     id: nextId++,
-    title: req.body.title,
-    content: req.body.content,
-    author: req.body.author,
+    title,
+    content,
+    author,
     published: false,
   };
 
@@ -42,11 +56,10 @@ function create(req, res) {
 
   fs.writeFile(DATA_PATH, JSON.stringify(articles, null, 2), (err) => {
     if (err) {
-      console.error(err);
       return res.status(500).json({ error: "Error al guardar el artículo" });
     }
 
-    res.status(201).json({ message: "Artículo creado", article: newArticle });
+    res.status(201).json(newArticle);
   });
 }
 
@@ -91,16 +104,20 @@ function update(req, res, next) {
 
   const indexArticle = articles.findIndex((article) => article.id === id);
 
-  if (indexArticle < 0) {
-    return res.status(404).send({ error: "No existe el articulo" });
+  if (indexArticle === -1) {
+    return res.status(404).json({ error: "No existe el articulo" });
   }
 
   const updatedArticle = articles[indexArticle];
 
   Object.assign(updatedArticle, updatedInfo);
 
-  fs.writeFile(DATA_PATH, JSON.stringify(articles, null, 2), () => {
-    res.send(`Artículo actualizado con ID: ${id}`);
+  fs.writeFile(DATA_PATH, JSON.stringify(articles, null, 2), (err) => {
+    if (err) {
+      return res.status(500).json({ error: "Error al guardar el archivo" });
+    }
+
+    res.status(200).json(updatedArticle);
   });
 }
 
@@ -110,10 +127,15 @@ function update(req, res, next) {
 function remove(req, res) {
   const id = Number(req.params.id);
 
-  articles = articles.filter((article) => article.id !== id);
+  const deleteArticles = articles.filter((article) => article.id !== id);
+
+  if (deleteArticles.length === articles.length) {
+    console.log("entra en el if");
+    return res.status(404).json({ error: "Artículo no encontrado" });
+  }
 
   fs.writeFile(DATA_PATH, JSON.stringify(articles, null, 2), () => {
-    res.json({ message: "Artículo borrado correctamente" });
+    res.status(204).json({ message: "Artículo borrado correctamente" });
   });
 }
 

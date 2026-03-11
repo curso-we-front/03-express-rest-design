@@ -18,7 +18,7 @@ function validateArticle(req, res, next) {
     const err = errors.array()[0];
     return res.status(422).json({
       error: err.msg,
-      field: err.param,
+      field: err.path,
     });
   }
 
@@ -29,7 +29,7 @@ const articleRules = [
   body("title")
     .notEmpty()
     .withMessage("Título requerido")
-    .isLength({ min: 3, max: 100 })
+    .isLength({ min: 2, max: 100 })
     .withMessage("El minimo de caracteres es 3"),
   body("content")
     .notEmpty()
