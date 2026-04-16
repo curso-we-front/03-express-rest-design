@@ -38,5 +38,101 @@
     "author": "Carlos López",
     "published": false,
     "createdAt": "2024-03-18T11:00:00Z"
+  },
+  {
+    "id": 6,
+    "title": "Artículo de prueba",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Tester",
+    "published": false,
+    "createdAt": "2026-04-15T18:02:00.954Z"
+  },
+  {
+    "id": 7,
+    "title": "Ok",
+    "content": "Corto",
+    "author": "X",
+    "published": false,
+    "createdAt": "2026-04-15T18:02:00.968Z"
+  },
+  {
+    "id": 8,
+    "title": "Nuevo título actualizado",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Tester",
+    "published": false,
+    "createdAt": "2026-04-15T18:02:00.986Z"
+  },
+  {
+    "id": 9,
+    "title": "Artículo de prueba",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Tester",
+    "published": false,
+    "createdAt": "2026-04-15T18:04:27.734Z"
+  },
+  {
+    "id": 10,
+    "title": "Nuevo título actualizado",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Tester",
+    "published": false,
+    "createdAt": "2026-04-15T18:04:27.768Z"
+  },
+  {
+    "id": 11,
+    "title": "Artículo de prueba",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Tester",
+    "published": false,
+    "createdAt": "2026-04-15T18:12:38.577Z"
+  },
+  {
+    "id": 12,
+    "title": "Nuevo título actualizado",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Tester",
+    "published": false,
+    "createdAt": "2026-04-15T18:12:38.628Z"
+  },
+  {
+    "id": 13,
+    "title": "Artículo de prueba",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Tester",
+    "published": false,
+    "createdAt": "2026-04-15T18:17:29.332Z"
+  },
+  {
+    "id": 14,
+    "title": "Oky",
+    "content": "Corto",
+    "author": "X",
+    "published": false,
+    "createdAt": "2026-04-15T18:17:29.358Z"
+  },
+  {
+    "id": 15,
+    "title": "Nuevo título actualizado",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Tester",
+    "published": false,
+    "createdAt": "2026-04-15T18:17:29.372Z"
+  },
+  {
+    "id": 16,
+    "title": "Artículo de prueba",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Tester",
+    "published": false,
+    "createdAt": "2026-04-16T12:24:54.178Z"
+  },
+  {
+    "id": 17,
+    "title": "Nuevo título actualizado",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Tester",
+    "published": false,
+    "createdAt": "2026-04-16T12:24:54.229Z"
   }
 ]

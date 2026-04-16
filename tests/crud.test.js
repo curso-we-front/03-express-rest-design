@@ -31,7 +31,7 @@ describe('POST /articles', () => {
   });
 
   test('422 si content es muy corto', async () => {
-    const res = await request.post('/articles').send({ title: 'Ok', content: 'Corto', author: 'X' });
+    const res = await request.post('/articles').send({ title: 'Oky', content: 'Corto', author: 'X' });
     expect(res.status).toBe(422);
     expect(res.body.field).toBe('content');
   });
