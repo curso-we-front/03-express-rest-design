@@ -1,5 +1,6 @@
 const path = require("path");
 const fs = require("fs");
+const { error } = require("console");
 
 const DATA_PATH = path.join(__dirname, "../../data/articles.json");
 
@@ -21,6 +22,10 @@ function getOne(req, res, next) {
   try {
     const id = parseInt(req.params.id);
     const article = articles.find((article) => article.id === id);
+    if (article === undefined) {
+      return res.status(404).json({ error: "Article not found" });
+    }
+
     res.json(article);
   } catch (error) {
     next(error);
@@ -60,7 +65,10 @@ function replace(req, res, next) {
     const id = parseInt(req.params.id);
     const { title, content, author, published } = req.body;
     const articleIndex = articles.findIndex((article) => article.id === id);
-    articles[articleIndex] = {
+    if (articleIndex === -1) {
+      return res.status(404).json({ error: "Article not found" });
+    }
+    const artile = {
       ...articles[articleIndex],
       id: id,
       title: title,
@@ -68,8 +76,9 @@ function replace(req, res, next) {
       author: author,
       published: published,
     };
+    articles[articleIndex] = artile;
     fs.writeFileSync(DATA_PATH, JSON.stringify(articles, null, 2), "utf-8");
-    return res.status(200).json({ message: "File saved successfully" });
+    return res.status(200).json(artile);
   } catch (error) {
     next(error);
   }
