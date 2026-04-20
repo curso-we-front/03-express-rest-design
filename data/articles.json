@@ -412,5 +412,93 @@
     "author": "Autor",
     "published": false,
     "createdAt": "2026-04-20T18:05:14.511Z"
+  },
+  {
+    "id": 55,
+    "title": "Artículo de prueba",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Tester",
+    "published": false,
+    "createdAt": "2026-04-20T18:25:02.584Z"
+  },
+  {
+    "id": 56,
+    "title": "Artículo de prueba",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Tester",
+    "published": false,
+    "createdAt": "2026-04-20T18:25:02.606Z"
+  },
+  {
+    "id": 57,
+    "title": "Título reemplazado",
+    "content": "Contenido nuevo suficientemente largo para ser válido.",
+    "author": "Autor nuevo",
+    "published": true,
+    "createdAt": "2026-04-20T18:25:02.627Z"
+  },
+  {
+    "id": 58,
+    "title": "Nuevo título actualizado",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Tester",
+    "published": false,
+    "createdAt": "2026-04-20T18:25:02.649Z"
+  },
+  {
+    "id": 59,
+    "title": "Artículo de prueba",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Tester",
+    "published": false,
+    "createdAt": "2026-04-20T18:26:20.431Z"
+  },
+  {
+    "id": 60,
+    "title": "Artículo de prueba",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Tester",
+    "published": false,
+    "createdAt": "2026-04-20T18:26:20.454Z"
+  },
+  {
+    "id": 61,
+    "title": "Título reemplazado",
+    "content": "Contenido nuevo suficientemente largo para ser válido.",
+    "author": "Autor nuevo",
+    "published": true,
+    "createdAt": "2026-04-20T18:26:20.473Z"
+  },
+  {
+    "id": 62,
+    "title": "Nuevo título actualizado",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Tester",
+    "published": false,
+    "createdAt": "2026-04-20T18:26:20.493Z"
+  },
+  {
+    "id": 63,
+    "title": "Título válido",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Autor",
+    "published": false,
+    "createdAt": "2026-04-20T18:26:21.005Z"
+  },
+  {
+    "id": 64,
+    "title": "Título válido",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Autor",
+    "published": false,
+    "createdAt": "2026-04-20T18:26:21.015Z"
+  },
+  {
+    "id": 65,
+    "title": "Título válido",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Autor",
+    "published": false,
+    "createdAt": "2026-04-20T18:26:21.025Z"
   }
 ]
