@@ -500,5 +500,117 @@
     "author": "Autor",
     "published": false,
     "createdAt": "2026-04-20T18:26:21.025Z"
+  },
+  {
+    "id": 66,
+    "title": "Artículo de prueba",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Tester",
+    "published": false,
+    "createdAt": "2026-04-22T10:02:30.749Z"
+  },
+  {
+    "id": 67,
+    "title": "Artículo de prueba",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Tester",
+    "published": false,
+    "createdAt": "2026-04-22T10:02:30.770Z"
+  },
+  {
+    "id": 68,
+    "title": "Título reemplazado",
+    "content": "Contenido nuevo suficientemente largo para ser válido.",
+    "author": "Autor nuevo",
+    "published": true,
+    "createdAt": "2026-04-22T10:02:30.787Z"
+  },
+  {
+    "id": 69,
+    "title": "Nuevo título actualizado",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Tester",
+    "published": false,
+    "createdAt": "2026-04-22T10:02:30.807Z"
+  },
+  {
+    "id": 70,
+    "title": "Título válido",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Autor",
+    "published": false,
+    "createdAt": "2026-04-22T10:02:31.050Z"
+  },
+  {
+    "id": 71,
+    "title": "Título válido",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Autor",
+    "published": false,
+    "createdAt": "2026-04-22T10:02:31.058Z"
+  },
+  {
+    "id": 72,
+    "title": "Título válido",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Autor",
+    "published": false,
+    "createdAt": "2026-04-22T10:02:31.073Z"
+  },
+  {
+    "id": 73,
+    "title": "Artículo de prueba",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Tester",
+    "published": false,
+    "createdAt": "2026-04-22T10:03:11.177Z"
+  },
+  {
+    "id": 74,
+    "title": "Artículo de prueba",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Tester",
+    "published": false,
+    "createdAt": "2026-04-22T10:03:11.197Z"
+  },
+  {
+    "id": 75,
+    "title": "Artículo de prueba",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Tester",
+    "published": false,
+    "createdAt": "2026-04-22T10:03:11.216Z"
+  },
+  {
+    "id": 76,
+    "title": "Nuevo título actualizado",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Tester",
+    "published": false,
+    "createdAt": "2026-04-22T10:03:11.237Z"
+  },
+  {
+    "id": 77,
+    "title": "Título válido",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Autor",
+    "published": false,
+    "createdAt": "2026-04-22T10:03:11.527Z"
+  },
+  {
+    "id": 78,
+    "title": "Título válido",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Autor",
+    "published": false,
+    "createdAt": "2026-04-22T10:03:11.539Z"
+  },
+  {
+    "id": 79,
+    "title": "Título válido",
+    "content": "Contenido suficientemente largo para ser válido.",
+    "author": "Autor",
+    "published": false,
+    "createdAt": "2026-04-22T10:03:11.553Z"
   }
 ]

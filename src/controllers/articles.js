@@ -22,7 +22,7 @@ function getOne(req, res, next) {
   try {
     const id = parseInt(req.params.id);
     const article = articles.find((article) => article.id === id);
-    if (article === undefined) {
+    if (!article) {
       return res.status(404).json({ error: "Article not found" });
     }
 
@@ -64,11 +64,11 @@ function replace(req, res, next) {
   try {
     const id = parseInt(req.params.id);
     const { title, content, author, published } = req.body;
-    const articleIndex = articles.findIndex((article) => article.id === id);
-    if (articleIndex === -1) {
+    const articleIndex = articles.find((article) => article.id === id);
+    if (!articleIndex) {
       return res.status(404).json({ error: "Article not found" });
     }
-    const artile = {
+    const article = {
       ...articles[articleIndex],
       id: id,
       title: title,
@@ -76,7 +76,7 @@ function replace(req, res, next) {
       author: author,
       published: published,
     };
-    articles[articleIndex] = artile;
+    articles[articleIndex] = article;
     fs.writeFileSync(DATA_PATH, JSON.stringify(articles, null, 2), "utf-8");
     return res.status(200).json(artile);
   } catch (error) {
