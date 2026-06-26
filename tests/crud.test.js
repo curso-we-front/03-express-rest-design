@@ -31,7 +31,7 @@ describe('POST /articles', () => {
   });
 
   test('422 si content es muy corto', async () => {
-    const res = await request.post('/articles').send({ title: 'Ok', content: 'Corto', author: 'X' });
+    const res = await request.post('/articles').send({ title: 'Okkl', content: 'Corto', author: 'X' });
     expect(res.status).toBe(422);
     expect(res.body.field).toBe('content');
   });
@@ -92,7 +92,7 @@ describe('PATCH /articles/:id', () => {
   });
 
   test('404 si no existe', async () => {
-    const res = await request.patch('/articles/99999').send({ title: 'x' });
+    const res = await request.patch('/articles/99999').send({ title: 'xxxx' });
     expect(res.status).toBe(404);
   });
 });
